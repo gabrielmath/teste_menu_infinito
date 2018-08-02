@@ -11,6 +11,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        // Alimentando banco de dados em sua criação (Técnica Code First feito com a partir do Eloquent e sua migrations)
+        $this->call(UsersTableSeeder::class);
+        $this->call(MenuTableSeeder::class);
     }
 }

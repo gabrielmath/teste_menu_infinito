@@ -1,0 +1,58 @@
+// Fontes
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variáveis
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+//------- Início configuração inicial do menu do laravel
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+//------- Fim configuração
+
+
+//------- Ajustes necessários para o funcionamento do menu
+body{
+  padding-top: 60px;
+}
+
+.dropdown-menu{
+  min-width: 7.5rem;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+//------- Fim ajustes
+
+//------- Aplicando espaçamento a elementos que estavam "colados" em outros
+.card{
+  margin-top: 20px;
+}
+
+.alert{
+  margin-top: 20px;
+}
+
+.pagination{
+  float: right;
+}
